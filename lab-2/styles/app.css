@@ -1,0 +1,22 @@
+html, body { padding: 0; margin: 0; }
+
+.row { border: 1px solid #CCC; margin: 10px; padding: 10px; }
+.row h2 { margin-top: 10px; }
+.product-adding {  }
+.form > .form_item { padding: 5px; margin-bottom: 5px; }
+.form > .form_item:last-child { margin-bottom: 0; }
+
+.part { width: 50%; }
+
+.part-left { float: left; }
+.part-right { float: right; }
+
+.product-list { width: 100%; }
+.product-list th { border-bottom: 1px solid #CCC; text-align: left; }
+.product-list tr td { border-bottom: 1px solid #EEE; }
+.product-list tr:last-child td { border-bottom: none; }
+.product-list_remove { text-align: center; width: 30px; }
+.product-list_remove .pseudo-link { color: #4B4BDA; font-family: Arial; cursor: pointer; }
+.product-list_checkbox { width: 30px; }
+.product-list_name {}
+.product-list_price { width: 100px; }

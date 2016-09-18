@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 2</title>
+	<link rel="stylesheet" type="text/css" href="./styles/app.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="./scripts/app.js" async="async"></script>
+	<script type="text/javascript" src="./scripts/lib/evented.js" async="async"></script>
+	<script type="text/javascript" src="./scripts/models/product.js" async="async"></script>
+	<script type="text/javascript" src="./scripts/factories/product.js" async="async"></script>
+	<script type="text/javascript" src="./scripts/store.js" async="async"></script>
+	<script type="text/javascript" src="./scripts/cart.js" async="async"></script>
+	<script type="text/javascript" src="./scripts/list.js" async="async"></script>
+	<script type="text/javascript">
+		window.onload = () => { application = new Application(); };
+	</script>
+</head>
+<body>
+
+<div class="row product-adding">
+	<h2>Добавление товара</h2>
+	<form class="form form__product" id="form-product">
+		<div class="form_item">
+			<label for="product_name">Наименование:</label>
+			<input type="text" name="product_name" id="product_name" value="OLED телевизор">
+		</div>
+		<div class="form_item">
+			<label for="product_price">Стоимость:</label>
+			<input type="number" name="product_price" id="product_price" value="100500">
+		</div>
+		<div class="form_item">
+			<input type="submit" name="product_submit">
+		</div>
+	</form>
+</div>
+
+<div class="row product-listing">
+	<div class="part part-left">
+		<h2>Товары</h2>
+		<table id="products" class="product-list">
+			<tr>
+				<th class="product-list_remove"></th>
+				<th class="product-list_checkbox"></th>
+				<th class="product-list_name">Наименование</th>
+				<th class="product-list_price">Цена</th>
+			</tr>	
+		</table>
+	</div>
+	<div class="part part-right">
+		<h2>Корзина</h2>
+		<table id="cart" class="product-list">
+			<tr>
+				<th class="product-list_remove"></th>
+				<th class="product-list_name">Наименование</th>
+				<th class="product-list_price">Цена</th>
+			</tr>	
+		</table>
+	</div>
+	<div style="clear:both">&nbsp;</div>
+</div>
+
+</body>
+</html>
